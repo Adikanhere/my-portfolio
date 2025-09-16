@@ -1,0 +1,129 @@
+.custom-nav {
+    background-color: #123456 !important;
+}
+
+.my-img {
+  width: 300px;
+  height: auto; /* keeps aspect ratio */
+}
+
+
+.btn-outline-dark:hover,
+.btn-outline-primary:hover,
+.btn-outline-success:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
+footer a:hover {
+  color: #0d6efd; /* Bootstrap primary color */
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+
+body {
+    background-color: #f0f2f5; /* Light gray background   */
+    /* You can use any color: hex, rgb, or color name */
+}
+
+#about {
+    background-color: #e0f7fa; /* Light cyan */
+}
+
+#about p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+#about h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+
+section {
+    padding-top: 70px; /* Adjust based on navbar height */
+}
+
+
+.navbar-nav {
+    margin-right: 200px; /* adjust the gap from right edge */
+}
+
+
+/* Increase navbar link font size and spacing */
+.custom-nav-links .nav-link {
+    font-size: 1.2rem; /* bigger text */
+    margin-left: 20px;  /* space between links */
+}
+
+/* Optional: adjust last link spacing from page edge */
+.custom-nav-links {
+    padding-right: 20px;
+}
+
+
+/* Home section full screen and centered text */
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #afc3e2 0%, #6610f2 100%); /* optional gradient */
+    color: #ffffff;
+}
+
+/* Buttons hover effect */
+#home .btn:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.edu-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.edu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.edu-card {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #ffffff;
+}
+
+.edu-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.edu-icon {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #655971, #f210d4);
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

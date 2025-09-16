@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Defines the character encoding as UTF-8 (supports almost all characters and symbols). -->
+    <meta charset="utf-8">
+
+    <!-- Makes the page responsive. Ensures it scales properly on mobile devices by setting the viewport width equal to the device width. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap demo</title>
+
+    <!-- this link to bootstrap css file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="script.css">
+
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+            <!-- Brand on the left -->
+            <a class="navbar-brand fs-3" href="#home">Aditya Kanhere</a> <!-- fs-3 increases brand size -->
+
+            <!-- Toggler button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav links on the right -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto custom-nav-links">
+                    <a class="nav-link" aria-current="page" href="#home">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#education">Education</a>
+                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Home Section -->
+    <section id="home" class="d-flex align-items-center"
+        style="height:100vh; background-color: #0d6efd; color: #ffffff;">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold">Hi, I’m Aditya Kanhere</h1>
+                    <p class="lead mt-3">A passionate <strong>Software Developer</strong>. I build interactive,
+                        user-friendly websites and web apps.</p>
+                    <a href="#projects" class="btn btn-light btn-lg me-2">View Projects</a>
+                    <a href="Aditya's Resume.pdf" class="btn btn-outline-light btn-lg" download>Download
+                        Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- add a image -->.
+    <!-- <div class="img-thumbnail">
+        <img src="img2.jpg" class="rounded" alt="..." width="200" height="200">
+    </div> -->
+
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">About Me</h2>
+            <div class="row align-items-center">
+
+                <!-- Image with hover effect -->
+                <div class="col-md-4 text-center mb-3">
+                    <div class="card shadow-sm border-0" style="width: 200px; margin:auto;">
+                        <img src="img2.jpg" class="card-img-top rounded-circle my-img" alt="Aditya Kanhere">
+                        <div class="card-body">
+                            <h5 class="card-title">Aditya Kanhere</h5>
+                            <p class="card-text text-muted">Software Developer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text with interactive buttons -->
+                <div class="col-md-8">
+                    <p>
+                        Hi, I’m Aditya Kanhere, a passionate Java Developer skilled in Core & Advanced Java, Spring,
+                        Spring Boot, and Microservices. I have hands-on experience with Hibernate, SQL, Docker,
+                        Kubernetes, and Apache Kafka to build scalable applications. I explore CI/CD pipelines and AWS
+                        cloud services to deliver efficient and reliable solutions. Driven by continuous learning, I
+                        focus on building impactful systems that solve real-world problems.
+                    </p>
+
+                    <!-- Buttons for action -->
+                    <!-- <a href="Aditya_Kanhere_Resume.pdf" class="btn btn-primary me-2" download>Download Resume</a>
+                <a href="https://www.linkedin.com/in/aditya-kanhere-6a084a252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    class="btn btn-outline-primary">LinkedIn</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Education Section -->
+    <section id="education" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold" data-aos="fade-down">🎓 Education</h2>
+
+            <div class="row g-4 justify-content-center">
+
+                <!-- Graduation Block -->
+                <div class="col-md-5" data-aos="fade-right">
+                    <div class="card shadow-lg border-0 h-100 edu-card p-3 text-center">
+                        <div class="edu-icon mb-3">
+                            🎓
+                        </div>
+                        <h5 class="card-title text-primary fw-bold">Graduation</h5>
+                        <p class="mb-1 fw-bold">B.E. in Artificial Intelligence & Data Science</p>
+                        <p class="text-muted">Dr. D. Y. Patil College of Engineering and Innovation <br> Pune,
+                            Maharashtra</p>
+                        <span class="badge bg-primary">2021 - 2025</span>
+                    </div>
+                </div>
+
+                <!-- High School Block -->
+                <div class="col-md-5" data-aos="fade-left">
+                    <div class="card shadow-lg border-0 h-100 edu-card p-3 text-center">
+                        <div class="edu-icon mb-3">
+                            📚
+                        </div>
+                        <h5 class="card-title text-success fw-bold">High School</h5>
+                        <p class="mb-1 fw-bold">12th / Senior Secondary</p>
+                        <p class="text-muted">Shiv Chhatrapati College <br> Chh. Sambhaji Nagar, Maharashtra</p>
+                        <span class="badge bg-success">2020 - 2021</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- Download Resume Button -->
+            <div class="text-center mt-5" data-aos="zoom-in">
+                <a href="Aditya's Resume.pdf" class="btn btn-primary btn-lg px-4" download>
+                    📄 Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Technologies I Work With</h2>
+            <div class="row text-center">
+
+                <!-- Java -->
+                <div class="col-md-3 col-6 mb-4 tech-card">
+                    <i class="fab fa-java fa-3x" style="color:#E76F00;"></i>
+                    <h5 class="mt-2">Java</h5>
+                </div>
+
+                <!-- Spring Boot -->
+                <div class="col-md-3 col-6 mb-4 tech-card">
+                    <i class="fas fa-leaf fa-3x" style="color:#6DB33F;"></i>
+                    <h5 class="mt-2">Spring Boot</h5>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="col-md-3 col-6 mb-4 tech-card">
+                    <i class="fab fa-js fa-3x" style="color:#F7DF1E;"></i>
+                    <h5 class="mt-2">JavaScript</h5>
+                </div>
+
+                <!-- React -->
+                <div class="col-md-3 col-6 mb-4 tech-card">
+                    <i class="fab fa-react fa-3x" style="color:#61DAFB;"></i>
+                    <h5 class="mt-2">React</h5>
+                </div>
+
+                <!-- HTML -->
+                <div class="col-md-3 col-6 mb-4 tech-card">
+                    <i class="fab fa-html5 fa-3x" style="color:#E34F26;"></i>
+                    <h5 class="mt-2">HTML5</h5>
+                </div>
+
+                <!-- CSS -->
+                <div class="col-md-3 col-6 mb-4 tech-card">
+                    <i class="fab fa-css3-alt fa-3x" style="color:#1572B6;"></i>
+                    <h5 class="mt-2">CSS3</h5>
+                </div>
+
+                <!-- SQL -->
+                <div class="col-md-3 col-6 mb-4 tech-card">
+                    <i class="fas fa-database fa-3x" style="color:#4DB33D;"></i>
+                    <h5 class="mt-2">SQL</h5>
+                </div>
+
+                <!-- Docker -->
+                <div class="col-md-3 col-6 mb-4 tech-card">
+                    <i class="fab fa-docker fa-3x" style="color:#2496ED;"></i>
+                    <h5 class="mt-2">Docker</h5>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CSS for Animation -->
+    <style>
+        .tech-card i {
+            transition: transform 0.3s ease;
+        }
+
+        .tech-card:hover i {
+            transform: scale(1.3);
+            /* zoom only */
+        }
+
+        .tech-card h5 {
+            transition: transform 0.3s ease;
+        }
+
+        .tech-card:hover h5 {
+            transform: scale(1.1);
+        }
+    </style>
+
+    <!-- Font Awesome Link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+
+
+
+    <!-- Projects Section -->
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Projects</h2>
+            <div class="row g-4">
+
+                <!-- Project 1 -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm" data-aos="fade-up">
+                        <a href="https://github.com/Adikanhere/LLM-Retail-Business-AI" target="_blank">
+                            <img src="llmimg.jpg" class="card-img-top" alt="Project 2">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                LLM for Retail Business(Optimizing Clothing with AI)</h5>
+                            <p class="card-text">LLM for Retail Business is an AI-driven, interactive assistant designed
+                                to help users ask natural language questions about their retail inventory data and get
+                                precise answers. It uses dynamically generated SQL queries to fetch relevant
+                                information. By leveraging Large Language Models (LLMs) with few-shot learning, the tool
+                                translates user input into SQL and retrieves data from a MySQL database making valuable
+                                business insights easily accessible to users without technical expertise.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm" data-aos="fade-up">
+                        <a href="https://github.com/AdityaKanhere/Project4" target="_blank">
+                            <img src="ecom_img.jpeg" class="card-img-top" alt="Project 4">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">E-commerce Web Application using Java Full Stack</h5>
+                            <p class="card-text">
+                                Developed a full-stack e-commerce platform using React (frontend) and Spring Boot
+                                (backend) with features like product listing, shopping cart, user authentication,
+                                payment integration, and order tracking. Implemented secure REST APIs and MySQL database
+                                to manage transactions and user
+                                operations efficiently.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm" data-aos="fade-up">
+                        <a href="https://splendorous-truffle-da5cba.netlify.app/" target="_blank">
+                            <img src="crm2.webp" class="card-img-top" alt="Project 4">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Full-Stack CRM Dashboard</h5>
+                            <p class="card-text">
+                                A full-stack Customer Relationship Management (CRM) system with a React frontend and a
+                                Spring Boot / REST API backend, fully deployed online. It enables efficient management
+                                of Customers, Leads, Opportunities, and Users, featuring interactive tables, search
+                                functionality, and smooth animations using Framer Motion. The responsive dashboard
+                                visualizes historical data with Bar, Pie, and Doughnut charts, and user authentication
+                                ensures secure access. The interface is fully mobile-friendly and intuitive.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm" data-aos="fade-up">
+                        <a href="https://agri-client.vercel.app/" target="_blank">
+                            <img src="agri.webp" class="card-img-top" alt="Project 2">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">AgriClient</h5>
+                            <p class="card-text">I built an Agriculture Marketplace Platform where farmers can directly
+                                connect with clients to sell crops, reducing their dependency on brokers. The platform
+                                includes features such as user login and registration, crop listing, weather updates,
+                                and a simple farmer-client chat system. The backend is developed using Spring Boot with
+                                JWT-secured APIs and MySQL, while the frontend is built with React and deployed
+                                successfully.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Project 4 -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm" data-aos="fade-up">
+                        <a href="https://github.com/AdityaKanhere/Project2" target="_blank">
+                            <img src="hotelImg.jpg" class="card-img-top" alt="Project 2">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel Management & Rating Service</h5>
+                            <p class="card-text">Hotel Management & Rating Services built using Java, Spring Boot,
+                                Spring Security, and REST APIs, with integration of PostgreSQL, MySQL, and MongoDB for
+                                exploring multi-database handling. Applied Apache Kafka for learning real-time
+                                communication between services and practiced containerization using Docker & Kubernetes.
+                                Explored CI/CD pipeline concepts to understand automation and modern deployment
+                                workflows.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm" data-aos="fade-up">
+                        <a href="https://github.com/Adikanhere/Product_Inventory_System" target="_blank">
+                            <img src="product_img.jpg" class="card-img-top" alt="Project 3">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Product Inventory Management System</h5>
+                            <p class="card-text">Developed a Product Inventory Management System to manage adding,
+                                viewing, updating, and deleting products. Applied core Spring concepts including
+                                dependency injection, bean lifecycle management, autowiring, annotations, expression
+                                language, and collection handling. Implemented database integration for seamless product
+                                storage and retrieval, along with logging features for better maintainability.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <div class="row justify-content-center">
+
+                <!-- Contact Form -->
+                <div class="col-md-8">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message"
+                                required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Social Links -->
+                <div class="col-md-8 mt-4 text-center">
+                    <a href="https://github.com/Adikanhere" target="_blank" class="btn btn-outline-dark me-2">
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/adityakanhere" target="_blank"
+                        class="btn btn-outline-primary me-2">
+                        LinkedIn
+                    </a>
+                    <a href="mailto:your-email@example.com" class="btn btn-outline-success">
+                        Email
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2025 Aditya Kanhere. All Rights Reserved.</p>
+            <div class="mb-2">
+                <a href="https://github.com/Adikanhere" target="_blank" class="text-light me-3">
+                    <i class="bi bi-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/adityakanhere" target="_blank" class="text-light me-3">
+                    <i class="bi bi-linkedin"></i> LinkedIn
+                </a>
+                <a href="mailto:your-email@example.com" class="text-light">
+                    <i class="bi bi-envelope-fill"></i> Email
+                </a>
+
+                <link rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+            </div>
+            <small>Designed & Built by Aditya Kanhere</small>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- this link to bootstrap js file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Animation duration in ms
+            once: true      // Only animate once
+        });
+    </script>
+
+</body>
+
+</html>
